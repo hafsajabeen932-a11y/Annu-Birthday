@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>For My ANNU 🖤</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500&family=Caveat:wght@500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div id="stars"></div>
+<div id="hearts"></div>
+<div id="cuteBubbles"></div>
+
+<!-- =========================
+LOCK / PASSCODE SCREEN
+Photo on the left (heart shaped), passcode card on the right
+========================= -->
+<section id="lockScreen">
+
+    <div class="lockWrapper">
+
+        <div class="floatingPhotoFrame passcodePhotoFrame">
+
+            <svg class="heartSvg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
+                <defs>
+                    <clipPath id="heartClipPasscode" clipPathUnits="objectBoundingBox">
+                        <path d="M0.5,0.9 C0.5,0.9 0.05,0.55 0.05,0.32 C0.05,0.12 0.23,0.02 0.4,0.08 C0.46,0.1 0.5,0.18 0.5,0.18 C0.5,0.18 0.54,0.1 0.6,0.08 C0.77,0.02 0.95,0.12 0.95,0.32 C0.95,0.55 0.5,0.9 0.5,0.9 Z"/>
+                    </clipPath>
+                </defs>
+                <image href="images/imagesPasscode.jpg" x="0" y="0" width="100" height="100"
+                       preserveAspectRatio="xMidYMid slice" clip-path="url(#heartClipPasscode)"></image>
+            </svg>
+
+        </div>
+
+        <div class="glass">
+
+            <h1>Enter Passcode</h1>
+
+            <input
+            id="password"
+            type="password"
+            maxlength="4"
+            placeholder="••••"
+            readonly>
+
+            <div class="keypad">
+
+                <button type="button" class="keypadBtn" data-key="1">1</button>
+                <button type="button" class="keypadBtn" data-key="2">2</button>
+                <button type="button" class="keypadBtn" data-key="3">3</button>
+                <button type="button" class="keypadBtn" data-key="4">4</button>
+                <button type="button" class="keypadBtn" data-key="5">5</button>
+                <button type="button" class="keypadBtn" data-key="6">6</button>
+                <button type="button" class="keypadBtn" data-key="7">7</button>
+                <button type="button" class="keypadBtn" data-key="8">8</button>
+                <button type="button" class="keypadBtn" data-key="9">9</button>
+                <button type="button" class="keypadBtn keypadAction" id="keypadClear">C</button>
+                <button type="button" class="keypadBtn" data-key="0">0</button>
+                <button type="button" class="keypadBtn keypadAction" id="keypadBack">⌫</button>
+
+            </div>
+
+            <button id="unlockBtn">
+
+                Unlock
+
+            </button>
+
+          <p id="wrongPassword">
+
+    <span class="cry">🥺</span>
+
+    <br>
+
+    Come on baby...
+
+    <br>
+
+    You know it, right?
+
+    </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="birthdayScreen">
+
+    <div class="content">
+
+        <h1>
+
+            It Is 9th of July,2026🤭<br>
+            And It is Your Birthday, My Love 🥰
+            <br>
+            Happy 23rd Birthday,
+            <br>
+            My ANNU ❤️
+
+        </h1>
+
+        <button id="continueBtn">
+
+            Continue
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- =========================
+CAKE SCREEN
+Photo on the left, cake + candles on the right
+========================= -->
+<section id="cakeScreen" class="hidden">
+
+    <div class="cakeWrapper">
+
+        <div class="floatingPhotoFrame cakePhotoFrame">
+            <img src="images/imagesCake.jpg" alt="Us">
+        </div>
+
+        <div class="cakeContainer">
+
+            <h2>Blow Out the Candles 🕯️
+                <br>
+                & 
+               <br> 
+                Make a Wish ✨
+            </h2>
+
+            <div class="cake">
+
+                <div class="layer top"></div>
+                <div class="layer middle"></div>
+                <div class="layer bottom"></div>
+
+                <div class="candles">
+
+                    <div class="candle">
+                        <div class="flame"></div>
+                        <div class="smoke"></div>
+                    </div>
+
+                    <div class="candle">
+                        <div class="flame"></div>
+                        <div class="smoke"></div>
+                    </div>
+
+                    <div class="candle">
+                        <div class="flame"></div>
+                        <div class="smoke"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <button id="wishBtn">✨ I Made My Wish</button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+TRANSITION SCREEN
+========================= -->
+<section id="transitionScreen" class="hidden">
+
+    <div class="transitionText">
+
+        <h1>I made something for you...</h1>
+
+        <p>Three little gifts waiting for you 💖</p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+GIFTS SCREEN
+(labels are generic on purpose — Gift 1 / Gift 2 / Gift 3 —
+so it stays a surprise which one is which)
+========================= -->
+<section id="giftScreen" class="hidden">
+
+    <h2 class="giftTitle">Choose your gift 🎁</h2>
+
+    <div class="giftBoxContainer">
+
+        <div class="giftBox" id="gift1">
+            🎁
+            <p>Gift 1</p>
+        </div>
+
+        <div class="giftBox" id="gift2">
+            🎁
+            <p>Gift 2</p>
+        </div>
+
+        <div class="giftBox" id="gift3">
+            🎁
+            <p>Gift 3</p>
+        </div>
+
+    </div>
+
+    <!-- appears only once all 3 gifts have been opened -->
+    <button id="finishBtn" class="hidden">Continue 💫</button>
+
+</section>
+
+
+<!-- =========================
+FINAL THANK YOU SCREEN
+========================= -->
+<section id="thankYouScreen" class="hidden">
+
+    <div class="content">
+
+        <h1>
+            Thank You for letting me Love You Jaan ❤️
+            <br>
+            I really hope that you loved my surprise,
+            <br>
+            now please come back to me,
+            <br>
+            I have been waiting for you 🥺💖
+            <br>
+            And I will always love you, my ANNU ❤️
+        </h1>
+
+    </div>
+
+</section>
+
+
+<audio id="song">
+
+<source src="music/Lauv - Steal The Show.mp3" type="audio/mpeg">
+
+</audio>
+
+<!-- GIFT POPUP BOX -->
+<div id="giftModal" class="hidden">
+
+    <div class="modalContent">
+
+        <span id="closeModal">✖</span>
+
+        <h2 id="modalTitle"></h2>
+
+        <div id="modalText"></div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
