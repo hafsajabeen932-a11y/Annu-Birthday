@@ -255,7 +255,7 @@ gift2.addEventListener("click", () => {
 
             I LOVE YOU SOOOOO VERYYY MUCH, and you have no idea at all keh aapne meri life kitni brighten krdi hai kitni behtareen bana di hai and sexyyy bhiii 😜.<br><br>
 
-            Kher, you are the best thing that has happened to me, Muhammad Anas Ansari. Never, ever doubt that. Although yeh joo aapki calls aati hain itne msgs aate hain naaa kisi din phone toor dungi aapka. Pagal, Gawar, Jahil!!! MERI JAAAN😘..<br><br>
+            Kher, you are the best thing that has happened to me, Muhammad Anas Ansari. Never, ever doubt that. Although yeh joo aapko itni calls aati hain itne msgs aate hain naaa kisi din phone toor dungi aapka. Pagal, Gawar, Jahil!!! MERI JAAAN😘..<br><br>
 
             Achaaa ab ziyada lambiii nhi I know abhii hi keh jab tak aap yeh dekh rahe honge mai aapko miss kr rhiii hongi.<br><br>
 
